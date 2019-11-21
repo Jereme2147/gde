@@ -31,11 +31,12 @@
                 require_once('./assets/landing-banner-text.php');
             ?>
         <section class="landing-services">
+            <?php 
+                require_once('./assets/landing-services.php');
+            ?>
             <!-- dynamically loaded services go here -->
             <!-- maybe 3? -->
-            <div class="landing-service-card">
-                <!-- title - sub-title - comments - image -->
-            </div>
+            
             <div class="landing-service-card">
                 
             </div>
