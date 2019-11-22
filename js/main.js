@@ -19,7 +19,8 @@ $(document).ready(function() {
     let $el = $('.banner-div');
     let bottom = $el.position().top + $el.offset().top + $el.outerHeight();
     // $("#landing-top-spacer").css({ height: `${Math.floor(bottom)}px`});
-    $(".banner-text").css({ height: `${Math.floor(bottom)}px` });
+    // $(".banner-text").css({ height: `${Math.floor(bottom)}px` });
+    $(".banner-text").css({ height: `${bottom}px` });
 })
 
 function menu(){
