@@ -28,7 +28,13 @@ function loadBanner() {
     let bottom = $el.position().top + $el.offset().top + $el.outerHeight(true);
     // $("#landing-top-spacer").css({ height: `${Math.floor(bottom)}px`});
     // $(".banner-text").css({ height: `${Math.floor(bottom)}px` });
-    $(".banner-text").css({ height: `${bottom}px` });
+    // $(".banner-text").css({ height: `${bottom}px` });
+    if (desktop.matches) {
+        $(".banner-text").css({ height: `800px` });
+    }else {
+        $(".banner-text").css({ height: `400px` });
+    }
+    
 }
 function menu(){
     const opacity = $(".mobile-menu").css('opacity');
