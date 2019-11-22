@@ -36,19 +36,16 @@
             ?>
             <!-- dynamically loaded services go here -->
             <!-- maybe 3? -->
-            
-            <div class="landing-service-card">
-                
-            </div>
-            <div class="landing-service-card">
-                
-            </div>
         </section>
         <section class="blog-section">
-
+            <?php 
+                require_once('./assets/blog-section.php');
+            ?>
         </section>
         <footer>
-            
+             <?php 
+                require_once('./assets/footer.php');
+            ?>
         </footer>
     </div>
 </body>
