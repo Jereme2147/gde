@@ -16,7 +16,10 @@ $(document).ready(function() {
         $(".hamburger").toggleClass("is-active");
         menu();
     })
-    loadBanner();
+    $(".banner-div").ready(function() {
+        loadBanner();
+    })
+    
  
 })
     //sets the banner text height. replaces 20 media queries.
