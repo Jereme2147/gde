@@ -8,6 +8,11 @@ const blue = "rgba(28, 63, 140, 1)";
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+let $el = $('.banner-div');
+let bottom = $el.position().top + $el.offset().top + $el.outerHeight(true);
+// $("#landing-top-spacer").css({ height: `${Math.floor(bottom)}px`});
+// $(".banner-text").css({ height: `${Math.floor(bottom)}px` });
+$(".banner-text").css({ height: `${bottom}px` });
 
 $(document).ready(function() {
     // $(this).scrollTop(0);
@@ -16,11 +21,7 @@ $(document).ready(function() {
         menu();
     })
     //sets the banner text height. replaces 20 media queries.
-    let $el = $('.banner-div');
-    let bottom = $el.position().top + $el.offset().top + $el.outerHeight(true);
-    // $("#landing-top-spacer").css({ height: `${Math.floor(bottom)}px`});
-    // $(".banner-text").css({ height: `${Math.floor(bottom)}px` });
-    $(".banner-text").css({ height: `${bottom}px` });
+ 
 })
 
 function menu(){
